@@ -13,6 +13,7 @@ nav {
     justify-content: space-between;
     margin: 0px;
     padding: 0px 20px;
+    border-bottom: 1px solid #4e4e4e;
 }
 nav img {
     height: 40px;
@@ -56,7 +57,7 @@ nav img {
     color: rgb(172, 172, 172);
 }
 
-.active {
+#active {
     color: rgb(35,116,225);
     border-bottom: 3px solid rgb(35,116,225);
 }
@@ -145,19 +146,6 @@ main{
     background: #292b2c;
 }
 
-.content {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    background: #2a2c2e;
-    font-size: 15px;
-    line-height: 20px;
-    align-items: center;
-    border-radius: 20px;
-    margin-top: 30px;
-    color: white;
-    float: right;
-}
 .right-side-bar {
     width: 20%;
     display: flex;
@@ -239,4 +227,46 @@ main{
     height: 80px;
     width: 25%;
     border-radius: 10px;
+}
+
+.content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background: #2a2c2e;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 25px;
+    color: #b0b3b8;
+    float: right;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    border-bottom: 1px solid #4e4e4e;
+}
+
+.content-header-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 96%;
+    margin: 0px 10px;
+}
+
+.content-nav-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 1.9em;
+    justify-content: center;
+    align-items: center;
 }
