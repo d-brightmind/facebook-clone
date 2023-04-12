@@ -57,7 +57,7 @@ nav img {
     color: rgb(172, 172, 172);
 }
 
-#active {
+.active {
     color: rgb(35,116,225);
     border-bottom: 3px solid rgb(35,116,225);
 }
@@ -74,7 +74,9 @@ nav img {
     width: 20px;
 }
 
-.right-nav-icons img {
+.right-nav-icons img, 
+.what-on-your-mind img, 
+.post-header img {
     height: 40px;
     width: 40px;
     border-radius: 100px;
@@ -107,7 +109,6 @@ div {
     padding: 0px;
     font-size: 15px;
     line-height: 20px;
-    position: static;
     padding-bottom: 10px;
     border-bottom: 1px solid #4e4e4e;
 }
@@ -132,7 +133,7 @@ div {
     gap: 10px;
     border-radius: 10px;
     font-size: 15px;
-    padding: 3px 10px;
+    padding: 2px 10px;
 }
 
 main{
@@ -142,8 +143,12 @@ main{
     padding: 10px;
 }
 
-.navbar-link:hover, .ads:hover {
-    background: #292b2c;
+.navbar-link:hover, 
+.ads:hover, 
+.content-header-icon:hover, 
+.nav-icons:hover {
+    background: #373a3b;
+    border-radius: 10px;
 }
 
 .right-side-bar {
@@ -225,32 +230,38 @@ main{
 
 .ads img {
     height: 80px;
-    width: 25%;
+    width: 28%;
     border-radius: 10px;
 }
 
 .content {
-    width: 35%;
+    width: 38%;
     display: flex;
     flex-direction: column;
-    background: #2a2c2e;
     font-size: 15px;
     line-height: 20px;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 25px;
     color: #b0b3b8;
-    float: right;
+    padding: 0px;
 }
 
+.stories-section{
+    width: 100%;
+    border-radius: 10px;
+    background: #2a2c2e;
+    margin: 0px;
+}
 .content-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 95.5%;
     height: 60px;
     margin: 0px;
     border-bottom: 1px solid #4e4e4e;
+    padding: 0px 10px;
 }
 
 .content-header-icon {
@@ -258,15 +269,181 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 96%;
-    margin: 0px 10px;
+    height: 95%;
+    margin: 0px;
 }
 
 .content-nav-icons {
     display: flex;
     margin: 0px;
-    padding: 0px 10px;
+    padding: 0px 5px;
     font-size: 1.9em;
     justify-content: center;
     align-items: center;
+}
+
+.stories {
+    display: flex;
+    height: 240px;
+    width: 94%;
+    padding: 2% 3%;
+    justify-content: center;
+    margin: 0px;
+}
+
+.stories-cards {
+    width: 100%;
+    display: grid;
+    margin: 0px 5px;
+    padding: 0px;
+    background: #5c5c5c;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    text-align: center;
+    grid-template: repeat(8, 30px) / repeat(3, 37px);
+}
+
+.user-stories-cards {
+    width: 100%;
+    display: grid;
+    margin: 0px 5px;
+    padding: 0px;
+    background: #5c5c5c;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    text-align: start;
+    font-weight: 500;
+    grid-template: repeat(8, 30px) / repeat(3, 37px);
+}
+
+.stories-cards img{
+    height: 165px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px 10px 0px 0px;
+    grid-area: 1 / 1 / 5 / 4;
+    object-fit: cover;
+}
+
+.user-stories-cards img{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    object-fit: cover;
+    grid-area: 1 / 1 / 9 / 4;
+}
+
+.stories-cards i {
+    margin: 0px;
+    display: inline-flex;
+    padding: 5px;
+    font-size: 1.3em;
+    color: rgb(172, 172, 172);
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    background: rgb(35,116,225);
+    grid-area: 6 / 2 / 6 / 3;
+    border: 3px solid rgb(61, 61, 61);
+    z-index: 10;
+}
+
+.stories h4 {
+    width: 100%;
+    grid-area: 7 / 1 / 8 / 4;
+}
+
+.user-stories{
+    grid-area: 2 / 2 / 3 / 3;
+    height: 40px;
+    width: 40px;
+    border: 3px solid rgb(35,116,225);
+    border-radius: 50px;
+}
+
+.what-on-your-mind{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    border-radius: 10px;
+    background: #2a2c2e;
+    margin: 10px 0px;
+    padding: 2%;
+}
+
+.input-pics{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid #4e4e4e;
+    padding: 10px 5px;
+}
+
+.input-pics input{
+    height: 40px;
+    width: 99%;
+    border-radius: 20px;
+    background: rgb(77, 77, 77);
+    outline: none;
+    padding: 0px 20px;
+    border: none;
+    margin: 0px;
+}
+
+::placeholder {
+    color: rgb(211, 211, 211);
+    opacity: 1; 
+    font-size: 1.3em;
+}
+
+.what-on-your-mind-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95.5%;
+    height: 50px;
+    margin: 0px;
+    padding: 5px;
+}
+
+/*Post Section*/
+
+.post{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    border-radius: 10px;
+    background: #2a2c2e;
+    margin: 10px 0px;
+    padding: 2%;
+    font-weight: 100;
+}
+
+.post-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.name-lastseen{
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.post-icon{
+    display: flex;
+    flex-direction: row;
 }
