@@ -753,8 +753,11 @@ div {
     padding: 0px;
     color: white;
     padding-right: 5px;
+    height: 10vh;
+    overflow: hidden;
     position: -webkit-sticky;
     position: sticky;
+    top: 62px;
     top: 0;
 }
 
@@ -830,7 +833,6 @@ div {
     justify-content: start;
     align-items: start;
     color: rgb(214, 214, 214);
-    height: 110vh;
     overflow: hidden;
     position: -webkit-sticky;
     position: sticky;
