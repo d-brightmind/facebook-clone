@@ -829,7 +829,12 @@ div {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    color: rgb(214, 214, 214)
+    color: rgb(214, 214, 214);
+    height: 110vh;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 62px;
 }
 
 .sub-info{
@@ -915,25 +920,45 @@ div {
     justify-content: space-between;
     border-radius: 20px;
 }
-.photo-images div{
-    border-radius: 20px;
-}
 .photo-images img{
     width: 32%;
     height: 120px;
     background-size: cover;
 }
-.friends-pics, .friends-photos{
+.friends-pics-section {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+.friends-photos{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
 }
 .friends-photos div{
-    width: 32%;
-    height: 120px;
+    width: 33%;
+    margin: 0px;
+    padding: 0px;
+    gap: 5px;
+}
+.friends-photos h5{
+    margin: 0px;
+    padding: 0px;
+}
+.friends-photos img{
+    width: 100%;
+    height: 100px;
     background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
 }
 .profile-page-post{
     width: 60%;
